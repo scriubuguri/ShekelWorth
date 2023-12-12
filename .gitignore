@@ -1,0 +1,6 @@
+venv
+*.pyc
+**/__pycache__
+shekelworth/db.sqlite3
+shekelworth/shekelworthapp/migrations
+.DS_Store
