@@ -2,5 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.currency_converter, name='index'),
+    path('', views.shekel_worth, name='index'),
+    path('result/', views.result, name='result'),
 ]
