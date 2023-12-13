@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Shekel Worth</title>
+    <style>
+        body, p1 { font-family: Helvetica, Geneva; }
+    </style>
+</head>
+<body>
+<h1> CURRENCY CONVERTER</h1>
+<p>Simply use the currency converter on this page, which offers fast live exchange rate conversions today</p>
+    {% block sidebar %}
+        <ul class="sidebar-nav">
+            <form method="POST">
+            {% csrf_token %}
+            {{ forms.as_p }}
+                <button class="w3-btn w3-blue">Submit</button>
+             </form>
+          </ul>
+    {% endblock %}
+</body>
+</html>
+
