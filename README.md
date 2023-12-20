@@ -44,6 +44,12 @@ pip install -r requirements.txt
 
 ## Usage
 
+Before run the app, open the `shekelworth` folder (where you have the `manage.py` file) and apply the migrations:
+
+```bash
+python3 manage.py migrate
+```
+
 Run the app with the following command:
 
 ```bash
