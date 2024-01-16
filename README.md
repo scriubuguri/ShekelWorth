@@ -2,6 +2,8 @@
 
 This is a full stack project that allows users to quickly and easily convert between different currencies. The app utilizes the [ExchangeRate-API](https://www.exchangerate-api.com/) to fetch up-to-date exchange rates, ensuring accurate and reliable conversions.
 
+![](shekelworth.png)
+
 ## Features
 
 - *Real-Time Exchange Rates*: The app fetches the latest exchange rates from ExchangeRate-API to provide users with current and accurate conversion rates.
