@@ -1,5 +1,7 @@
 body {
-  background-color: transparent;
+  background-image: url("https://cdn.pixabay.com/photo/2022/05/31/00/56/sky-7232494_960_720.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
 
