@@ -7,10 +7,17 @@ body {
 
 h1 {
     color: #333;
+    text-align:center;
 }
 
 p {
-    color: #666;
+	color: #666;
+}
+
+p1 {
+    position: absolute;
+    bottom: 600px;
+    right: 710px;
 }
 
 .sidebar-nav {
@@ -22,6 +29,9 @@ p {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    margin: 10% 5%;
 }
 
 label {
@@ -34,8 +44,8 @@ select {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: 40px;
-    width: 20%;
+    width: calc(100% - 50px);
+    margin-left: 50px;
 }
 
 button {
