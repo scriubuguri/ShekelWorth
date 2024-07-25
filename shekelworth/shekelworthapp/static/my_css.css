@@ -1,62 +1,72 @@
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2022/05/31/00/56/sky-7232494_960_720.jpg");
-  background-size: 100% auto;
+  background-image: url("https://cdn.pixabay.com/photo/2017/09/07/14/33/clouds-2725520_960_720.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
 }
 
 h1 {
-    color: #333;
-    text-align:center;
+	text-align: center;
+	margin-top: 3rem;
+	color: #2F4F4F;
+	font-family: "Brush Script MT";
 }
 
-p {
-	color: #666;
+.coolBeans {
+  min-height: 40px;
+  min-width: 140px;
+  border: 3px solid currentColor;
+  border-radius: 1rem;
+  color: #006400;
+  font-family: "Brush Script MT";
+  font-size: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  transition: .2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
 }
 
-p1 {
-    position: absolute;
-    bottom: 600px;
-    right: 710px;
+.coolBeans::after {
+  background-color: #A9A9A9;
+  border-radius: 1rem;
+  display: block;
+  position: absolute;
+  transform: translate(-100%, 0) rotate(10deg);
 }
 
-.sidebar-nav {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
+.coolBeans:hover::after {
+  transform: translate(0, 0);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25%;
-    margin: 10% 5%;
+.coolBeans:hover {
+  border: 2px solid transparent;
+  color: #006400;
+  transform: scale(1.20);
+  will-change: transform;
 }
 
 label {
-    margin-bottom: 5px;
+  color: #2F4F4F;
+  font-weight: bold;
+  font-size: 17px;
+  width: 90px;
+  float: left;
+
 }
 
-input[type="text"],
-select {
-    padding: 6px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: calc(100% - 50px);
-    margin-left: 50px;
+input {
+  font-size: 14px;
+  width: 50px;
 }
 
-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2980b9;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 35vh;
 }

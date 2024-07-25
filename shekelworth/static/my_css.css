@@ -1,0 +1,59 @@
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2022/05/31/00/56/sky-7232494_960_720.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: red;
+    text-align:center;
+}
+
+
+p1 {
+    color: red;
+    position: absolute;
+    bottom: 600px;
+    right: 710px;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+form {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    margin: 10% 5%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 50px);
+    margin-left: 50px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
