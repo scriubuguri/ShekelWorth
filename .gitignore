@@ -1,4 +1,5 @@
 venv
+*shekelworth/static/admin/
 *.pyc
 **/__pycache__
 shekelworth/db.sqlite3
