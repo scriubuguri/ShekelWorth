@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Shekel Worth</h1>
-<p style="text-align:center; font-family:'Brush Script MT'; color:#2F4F4F;font-weight:bold;margin-top: 2rem;">Select the currencies and perform the conversion!</p>
+<p style="text-align:center; font-family:'Brush Script MT'; color:#081C15;font-weight:bold;font-size:20px;margin-top: 2rem;">Select the currencies and perform the conversion!</p>
 <div class="container">
     {% block sidebar %}
         <form method="POST">
@@ -19,9 +19,9 @@
             <button type="submit" class="coolBeans" style="font-weight:bold;">Submit</button>
         </form>
         {% if conversion_result %}
-            <p style="text-align:center; font-family:'Arial'; color:#2F4F4F;;font-weight:bold;margin-top: 2rem;">
-                {{ conversion_result }}
-            </p>
+            <div class="result-box">
+                <p>Conversion Result: <span class="highlight">{{ conversion_result }}</span></p>
+            </div>
         {% endif %}
     {% endblock %}
 </div>

@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2017/09/07/14/33/clouds-2725520_960_720.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946_960_720.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -9,8 +9,8 @@ body {
 
 h1 {
 	text-align: center;
-	margin-top: 3rem;
-	color: #2F4F4F;
+	margin-top: rem;
+	color: #081C15;
 	font-family: "Brush Script MT";
 }
 
@@ -49,16 +49,16 @@ h1 {
 }
 
 label {
-  color: #2F4F4F;
+  color: #081C15;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 19px;
   width: 90px;
   float: left;
 
 }
 
 input {
-  font-size: 14px;
+  font-size: 16px;
   width: 50px;
 }
 
@@ -69,4 +69,39 @@ input {
   justify-content: center;
   text-align: center;
   height: 35vh;
+  margin-top: 3rem;
 }
+
+ .result-box {
+            margin-top: 2rem;
+            padding: 0.2rem;
+            border: 2px solid #081C15;
+            background-color: #e8f4f8;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            font-family: 'Arial';
+            font-size: 19px;
+            font-weight: bold;
+            color: #081C15;
+            text-align: center;
+        }
+
+        .result-box::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #e8f4f8;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .highlight {
+            font-size: 20px;
+            color: #1b4332;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
