@@ -24,6 +24,9 @@ def shekel_worth(request):
         response = requests.get(FULL_URL)
         resp = response.json()
         res = resp['conversion_result']
-        conversion_result = f"{amount} {_from} is equivalent to {res} {to}"
+
+        # Format the conversion result to two decimal places
+        formatted_result = f"{res:.2f}"
+        conversion_result = f"{amount} {_from} is equivalent to {formatted_result} {to}"
 
     return render(request, 'index.html', {'forms': forms, 'conversion_result': conversion_result})
