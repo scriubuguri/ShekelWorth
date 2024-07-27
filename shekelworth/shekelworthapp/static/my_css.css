@@ -11,8 +11,9 @@ h1 {
 	text-align: center;
 	margin-top: rem;
 	color: #081C15;
-	font-family: "Brush Script MT";
+	font-family: 'Libre Baskerville', serif;
 }
+
 
 .coolBeans {
   min-height: 40px;
@@ -20,7 +21,7 @@ h1 {
   border: 3px solid currentColor;
   border-radius: 1rem;
   color: #006400;
-  font-family: "Brush Script MT";
+  font-family: 'Libre Baskerville', serif;
   font-size: 1rem;
   overflow: hidden;
   text-decoration: none;
@@ -54,11 +55,13 @@ label {
   font-size: 19px;
   width: 90px;
   float: left;
+  font-family: 'Libre Baskerville', serif;
 
 }
 
 input {
   font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
   width: 50px;
 }
 
@@ -80,7 +83,7 @@ input {
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
-            font-family: 'Arial';
+            font-family: 'Libre Baskerville', serif;
             font-size: 19px;
             font-weight: bold;
             color: #081C15;
