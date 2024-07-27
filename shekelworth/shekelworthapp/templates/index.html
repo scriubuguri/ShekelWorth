@@ -13,12 +13,16 @@
 <p style="text-align:center; font-family:'Brush Script MT'; color:#2F4F4F;font-weight:bold;margin-top: 2rem;">Select the currencies and perform the conversion!</p>
 <div class="container">
     {% block sidebar %}
-            <form method="POST">
+        <form method="POST">
             {% csrf_token %}
-            {{ forms.as_p  }}
-                <!--<button>Submit</button>-->
-		<button type="submit" class="coolBeans" style="font-weight:bold;">Submit</button>
-             </form>
+            {{ forms.as_p }}
+            <button type="submit" class="coolBeans" style="font-weight:bold;">Submit</button>
+        </form>
+        {% if conversion_result %}
+            <p style="text-align:center; font-family:'Arial'; color:#2F4F4F;;font-weight:bold;margin-top: 2rem;">
+                {{ conversion_result }}
+            </p>
+        {% endif %}
     {% endblock %}
 </div>
 </body>
